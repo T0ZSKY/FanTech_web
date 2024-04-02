@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center; /* Centrer les éléments horizontalement */
+}
+
+.container {
+    padding: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(81, 172, 224);
+    font-size: 40px; /* Taille de police des liens dans la barre de navigation */
+    font-family: Commic Sans MS, sans-serif; /* Utilisation de la police par défaut */
+}
+
+/* Commentaire: Modification de la taille et du style des boutons de la barre de navigation */
+.btn {
+    text-decoration: none;
+    padding: 10px;
+    font-family: Arial, sans-serif; /* Utilisation de la police par défaut */
+    font-size: 30px; /* Taille de police des boutons */
+    color: #FFFFFF;
+    background-color: #00b0f0;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border: 4px solid #00b0f0;
+    box-shadow: 3px 3px 12px #444444;
+    -webkit-box-shadow: 3px 3px 12px #444444;
+    -moz-box-shadow: 3px 3px 12px #444444;
+}
+
+.btn:hover {
+    padding: 10px;
+    background-color: #92cddc;
+    border: 4px solid #92cddc;
+    box-shadow: 1px 1px 4px #777777;
+    -webkit-box-shadow: 1px 1px 4px #777777;
+    -moz-box-shadow: 1px 1px 4px #777777;
+}
+
+.Title {
+    padding-top: 200px;
+    text-align: center;
+    color: rgb(59, 59, 59);
+    font-size: 60px;
+}
+
+.Title2 {
+    font-size: 60px;
+    text-align: center;
+    color: rgb(59, 59, 59);
+}
+
+.Title_fan {
+    font-size: 60px;
+    text-align: center;
+    color: rgb(81, 172, 224);
+}
+
+.Sous_titre {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(107, 107, 107);
+}
+
+.image_demo {
+    text-align: center; /* Centre l'image horizontalement */
+}
+
+.image_demo img {
+    padding-top: 60px;
+    display: inline-block; /* Assure que l'image est affichée en tant que bloc */
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+    height: auto; /* Permet à l'image de conserver son ratio d'aspect */
+    transition: transform 0.3s ease; /* Ajoute une transition douce à la transformation */
+}
+
+.image_demo img:hover {
+    transform: scale(1.1); /* Agrandit l'image de 20% lorsque vous passez la souris dessus */
+}
+
+.used_by{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    padding-top: 60px;
+}
+
+
+#gradient-background {
+    background: linear-gradient(to bottom right, #007bff, #8a2be2); /* Dégradé de bleu à violet */
+    padding: 50px; /* Ajoute un peu d'espace autour du contenu */
+    color: white; /* Change la couleur du texte en blanc pour une meilleure lisibilité */
+    margin-top: 100px;
+    height: 800px;
+    width: 100%;
+}
+
+.descri{
+    padding-top: 80px;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+
+.descri2{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.team_img {
+    
+    height: 400px;
+    width: 600px;
+    border-radius: 20px;
+}
