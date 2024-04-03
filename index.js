@@ -1,41 +1,29 @@
-// Ajout d'un écouteur d'événement pour le formulaire de connexion
-document.getElementById("login-form").addEventListener("submit", function(a) {
-    a.preventDefault(); // Empêche le formulaire de se soumettre normalement
-
-    // Récupération des valeurs du nom d'utilisateur et du mot de passe
-    var b = document.getElementById("username").value;
-    var c = document.getElementById("password").value;
-
-    // Sélection des éléments d'alerte pour afficher les messages d'erreur
-    var d = document.getElementById("alert");
-    var e = document.getElementById("alert-message");
-
-    // Vérification des identifiants
-    if (b === hexToString("546f6d") && c === hexToString("4c654d64704465546f6d")) {
-        // Si les identifiants sont corrects, stockez l'état de connexion dans localStorage
-        localStorage.setItem("isLoggedIn", true);
-        // Redirigez l'utilisateur vers la page principale
-        window.location.href = "./src/main/main.html";
+document['getElementById']("login-form")['addEventListener']("submit", function (_0x5a2d4b) {
+    _0x5a2d4b['preventDefault']();
+    var _0x1001d6 = document['getElementById']("username")['value'];
+    var _0x1c90a1 = document['getElementById']("password")['value'];
+    var _0x487b3b = document['getElementById']("alert");
+    var _0x11e0e4 = document['getElementById']("alert-message");
+    if (_0x1001d6 === hexToString("546f6d") && _0x1c90a1 === hexToString("313530383036")) {
+        localStorage['setItem']("isLoggedIn", !![]);
+        window['location']['href'] = "./src/main/main.html";
     } else {
-        // Si les identifiants sont incorrects, affichez un message d'erreur
-        e.textContent = hexToString("4e6f6d206475277573657275696f2071756520706173736520696e636f72726563742e");
-        d.classList.add("show");
-        setTimeout(function() {
-            d.classList.remove("show");
-        }, 3000);
-        // Ajoutez une animation de secousse au conteneur de connexion
-        document.querySelector(".login-container").style.animation = "shake 0.5s";
-        setTimeout(function() {
-            document.querySelector(".login-container").style.animation = "";
-        }, 500);
+        _0x11e0e4['textContent'] = hexToString("4e6f6d206475277573657275696f2071756520706173736520696e636f72726563742e");
+        _0x487b3b['classList']['add']("show");
+        setTimeout(function () {
+            _0x487b3b['classList']['remove']("show");
+        }, 0xbb8);
+        document['querySelector'](".login-container")['style']['animation'] = "shake 0.5s";
+        setTimeout(function () {
+            document['querySelector'](".login-container")['style']['animation'] = "";
+        }, 0x1f4);
     }
 });
 
-// Fonction pour convertir une chaîne hexadécimale en texte brut
-function hexToString(hex) {
-    var string = '';
-    for (var i = 0; i < hex.length; i += 2) {
-        string += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+function hexToString(_0x5cf97d) {
+    var _0x3b97df = '';
+    for (var _0x3f0ac0 = 0x0; _0x3f0ac0 < _0x5cf97d['length']; _0x3f0ac0 += 0x2) {
+        _0x3b97df += String['fromCharCode'](parseInt(_0x5cf97d['substr'](_0x3f0ac0, 0x2), 0x10));
     }
-    return string;
+    return _0x3b97df;
 }
