@@ -35,7 +35,7 @@
 
 .text-home {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
     height: 180px;
     width: 100%;
 }
@@ -45,6 +45,7 @@
     color: rgb(59, 59, 59);
     font-size: 60px;
     font-family: 'Roboto Mono', monospace; 
+
 }
 
 /* Styles pour la section de la grille tarifaire */
